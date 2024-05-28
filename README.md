@@ -1,7 +1,13 @@
 # Login in MVVM, WPF, C-Sharp and SQL Server
 
 Dashboard Implementing the MVVM pattern, WPF, C-Sharp and SQL Server
- 
+
+ App icons:
+
+https://icons8.com/icons/set/dashboard
+
+https://fontawesome.com/
+
 Log in page
 
 ![image](https://github.com/AZRAELSANTI/MVVMDashboard/assets/83638372/164773e3-0916-4719-9e3c-fa4a702d15b3)
