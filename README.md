@@ -1,5 +1,7 @@
-# MVVMDashboard
+# Login in MVVM, WPF, C-Sharp and SQL Server
 
+Login Form Implementing the MVVM pattern, WPF, C-Sharp and SQL Server
+ 
 Log in page
 
 ![image](https://github.com/AZRAELSANTI/MVVMDashboard/assets/83638372/164773e3-0916-4719-9e3c-fa4a702d15b3)
