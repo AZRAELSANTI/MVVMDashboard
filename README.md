@@ -1,6 +1,6 @@
 # Login in MVVM, WPF, C-Sharp and SQL Server
 
-Login Form Implementing the MVVM pattern, WPF, C-Sharp and SQL Server
+Dashboard Implementing the MVVM pattern, WPF, C-Sharp and SQL Server
  
 Log in page
 
