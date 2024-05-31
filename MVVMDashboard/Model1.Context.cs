@@ -13,18 +13,18 @@ namespace MVVMDashboard
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MVVMLoginDbEntities : DbContext
+    public partial class MVVMDBEntities : DbContext
     {
-        public MVVMLoginDbEntities()
-            : base("name=MVVMLoginDbEntities")
+        public MVVMDBEntities()
+            : base("name=MVVMDBEntities")
         {
         }
-        private static MVVMLoginDbEntities _context;
-        public static MVVMLoginDbEntities Getcontext()
+        private static MVVMDBEntities _context;
+        public static MVVMDBEntities Getcontext()
         {
             if (_context == null)
             {
-                _context = new MVVMLoginDbEntities();
+                _context = new MVVMDBEntities();
             }
             return _context;
 

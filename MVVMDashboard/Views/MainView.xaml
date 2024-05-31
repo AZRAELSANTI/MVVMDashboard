@@ -20,6 +20,12 @@
         <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
             <local:HomeView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:OrderViewModel}">
+            <local:OrderView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:TransactionViewModel}">
+            <local:TransactionView/>
+        </DataTemplate>
     </Window.Resources>
 
 
@@ -92,7 +98,7 @@
                         </RadioButton>
                         <RadioButton Style="{StaticResource menuButton}"
                              Tag="{StaticResource color3}"
-                             >
+                             Command="{Binding ShowOrderViewCommand}">
                             <StackPanel Orientation="Horizontal">
                                 <fa:IconImage Icon="Truck" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Order" Style="{StaticResource menuButtonText}"/>
@@ -100,7 +106,7 @@
                         </RadioButton>
                         <RadioButton Style="{StaticResource menuButton}"
                              Tag="{StaticResource color4}"
-                             >
+                             Command="{Binding ShowTransactionViewCommand}">
                             <StackPanel Orientation="Horizontal">
                                 <fa:IconImage Icon="ShoppingBag" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Transaction" Style="{StaticResource menuButtonText}"/>
