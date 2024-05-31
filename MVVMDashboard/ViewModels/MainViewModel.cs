@@ -73,6 +73,8 @@ namespace MVVMDashboard.ViewModels
         }
         public ICommand ShowHomeViewCommand { get; }
         public ICommand ShowCustomerViewCommand { get; }
+        public ICommand ShowOrderViewCommand { get; }
+        public ICommand ShowTransactionViewCommand { get; }
 
         public MainViewModel()
         {
@@ -80,6 +82,8 @@ namespace MVVMDashboard.ViewModels
             CurrentUserAccount = new UserAccountModel();
             ShowHomeViewCommand = new ViewModelCommand(ExecuteShowHomeViewCommand);
             ShowCustomerViewCommand = new ViewModelCommand(ExecuteShowCustomerViewCommand);
+            ShowOrderViewCommand = new ViewModelCommand(ExecuteShowOrderViewCommand);
+            ShowTransactionViewCommand = new ViewModelCommand(ExecuteShowTransactionViewCommand);
             LoadCurrentUserData();
         }
         private void ExecuteShowCustomerViewCommand(object obj)
@@ -93,6 +97,18 @@ namespace MVVMDashboard.ViewModels
             CurrentChildView = new HomeViewModel();
             Caption = "Home";
             Icon = IconChar.Home;
+        }
+        private void ExecuteShowOrderViewCommand(object obj)
+        {
+            CurrentChildView = new OrderViewModel();
+            Caption = "Orders";
+            Icon = IconChar.Truck;
+        }
+        private void ExecuteShowTransactionViewCommand(object obj)
+        {
+            CurrentChildView = new TransactionViewModel();
+            Caption = "Transactions";
+            Icon = IconChar.ShoppingBag;
         }
 
         private void LoadCurrentUserData()

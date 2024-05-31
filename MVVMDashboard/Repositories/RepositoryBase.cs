@@ -12,7 +12,7 @@ namespace MVVMDashboard.Repositories
         private readonly string connectionString;
         public RepositoryBase()
         {
-            connectionString = "Server=WIN-F0U2NJDM669\\SQLEXPRESS; Database=MVVMLoginDb; Integrated Security=true; trustservercertificate=True";
+            connectionString = "Server=DESKTOP-Q1VPJHS\\SQLEXPRESS; Database=MVVMDB; Integrated Security=true; trustservercertificate=True";
         }
         protected SqlConnection GetConnection()
         {
